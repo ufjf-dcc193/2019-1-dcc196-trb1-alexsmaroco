@@ -12,10 +12,13 @@ public class Atividade {
     private String descricao;
     private Date data_inicio;
     private Date data_fim;
-    private Date horas_computadas;
-    private String categoria;
+    private Number horas_assistencial;
+    private Number horas_juridica;
+    private Number horas_financeira;
+    private Number horas_executiva;
 
     public Atividade() {
+
         
     }
 
@@ -27,9 +30,7 @@ public class Atividade {
         return titulo;
     }
 
-    public String getCategoria() {
-        return categoria;
-    }
+
 
     public Date getData_fim() {
         return data_fim;
@@ -43,14 +44,39 @@ public class Atividade {
         return descricao;
     }
 
-    public Date getHoras_computadas() {
-        return horas_computadas;
+
+    public Number getHoras_assistencial() {
+        return this.horas_assistencial;
     }
 
-
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
+    public void setHoras_assistencial(Number horas_assistencial) {
+        this.horas_assistencial = horas_assistencial;
     }
+
+    public Number getHoras_juridica() {
+        return this.horas_juridica;
+    }
+
+    public void setHoras_juridica(Number horas_juridica) {
+        this.horas_juridica = horas_juridica;
+    }
+
+    public Number getHoras_financeira() {
+        return this.horas_financeira;
+    }
+
+    public void setHoras_financeira(Number horas_financeira) {
+        this.horas_financeira = horas_financeira;
+    }
+
+    public Number getHoras_executiva() {
+        return this.horas_executiva;
+    }
+
+    public void setHoras_executiva(Number horas_executiva) {
+        this.horas_executiva = horas_executiva;
+    }
+
 
     public void setData_fim(Date data_fim) {
         this.data_fim = data_fim;
@@ -62,10 +88,6 @@ public class Atividade {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
-    }
-
-    public void setHoras_computadas(Date horas_computadas) {
-        this.horas_computadas = horas_computadas;
     }
 
     public void setId_atividade(Number id_atividade) {
