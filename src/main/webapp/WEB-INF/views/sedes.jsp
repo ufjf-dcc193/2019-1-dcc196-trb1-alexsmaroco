@@ -10,12 +10,29 @@
     <h1>TRB1: Sedes </h1>
     <a href="novaSede.html">Registrar nova sede</a>
 
-    <h4>Lista de sedes(clique para ver detalhes)</h4>
+    <h4>Lista de sedes</h4>
     
-    <table>
-
+    <table border="1">
+        <tr> 
+            <th>Nome</th>
+            <th colspan="2">Ações</th>
+        </tr>
         <c:forEach items="${sedes}" var="sede">
-            <tr> <td> <a href="detalhesSede.html?id=${sede.id}">${sede.nome_fantasia} </a> </td> </tr>
+            
+
+            <tr>
+                <td> 
+                    ${sede.nome_fantasia}
+                </td>
+                <td> 
+                    <a href="detalhesSede.html?id=${sede.id}"> <button>Editar</button> </a> 
+                </td>
+                <td> 
+                    <form action="sedes.html?id=${sede.id}" method="POST">
+                        <input type="submit" value="Excluir"/>
+                    </form>
+                </td>
+            </tr>
         </c:forEach>
 
     </table>
