@@ -2,10 +2,13 @@ package br.ufjf.dcc193.trb1.Models;
 
 import java.util.Date;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
 
 
 @Entity
@@ -14,6 +17,9 @@ public class Membro {
     @Id
     @GeneratedValue(strategy = GenerationType.TABLE)
     private Integer id_membro;
+
+    @ManyToOne(optional = false, cascade = CascadeType.ALL)
+    private Sede fk_sede;
 
     private String nome_completo;
     private String funcao;
