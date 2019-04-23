@@ -16,7 +16,7 @@ public class Atividade {
 
     @Id
     @GeneratedValue(strategy = GenerationType.TABLE)
-    private Integer id_atividade;
+    private Integer id;
 
     @ManyToOne(optional = false, cascade = CascadeType.ALL)
     private Sede fk_sede;
@@ -33,8 +33,8 @@ public class Atividade {
     public Atividade() {
     }
 
-    public Integer getId_atividade() {
-        return id_atividade;
+    public Integer getId() {
+        return id;
     }
 
     public String getTitulo() {
@@ -101,8 +101,8 @@ public class Atividade {
         this.descricao = descricao;
     }
 
-    public void setId_atividade(Integer id_atividade) {
-        this.id_atividade = id_atividade;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public void setTitulo(String titulo) {

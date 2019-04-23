@@ -16,7 +16,7 @@ public class Membro {
 
     @Id
     @GeneratedValue(strategy = GenerationType.TABLE)
-    private Integer id_membro;
+    private Integer id;
 
     @ManyToOne(optional = false, cascade = CascadeType.ALL)
     private Sede fk_sede;
@@ -32,12 +32,12 @@ public class Membro {
     }
 
 
-    public Integer getId_membro() {
-        return this.id_membro;
+    public Integer getId() {
+        return this.id;
     }
 
-    public void setId_membro(Integer id_membro) {
-        this.id_membro = id_membro;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getNome_completo() {
@@ -79,18 +79,5 @@ public class Membro {
     public void setData_fim(Date data_fim) {
         this.data_fim = data_fim;
     }
-
-    @Override
-    public String toString() {
-        return "{" +
-            " id_membro='" + getId_membro() + "'" +
-            ", nome_completo='" + getNome_completo() + "'" +
-            ", funcao='" + getFuncao() + "'" +
-            ", email='" + getEmail() + "'" +
-            ", data_inicio='" + getData_inicio() + "'" +
-            ", data_fim='" + getData_fim() + "'" +
-            "}";
-    }
-
     
 }

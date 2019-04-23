@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.NotBlank;
 
 
 @Entity
@@ -11,13 +12,22 @@ public class Sede {
 
     @Id
     @GeneratedValue(strategy = GenerationType.TABLE)
-    private Integer id_sede;
+    private Integer id;
 
+    @NotBlank(message="Campo nome não pode ser vazio")
     private String nome_fantasia;
+
+    @NotBlank(message="Campo estado não pode ser vazio")
     private String estado;
+
+    @NotBlank(message="Campo cidade não pode ser vazio")
     private String cidade;
+
+    @NotBlank(message="Campo bairro não pode ser vazio")
     private String bairro;
+
     private Integer telefone;
+
     private String website;
 
 
@@ -26,12 +36,12 @@ public class Sede {
     }
 
 
-    public Integer getId_sede() {
-        return this.id_sede;
+    public Integer getId() {
+        return this.id;
     }
 
-    public void setId_sede(Integer id_sede) {
-        this.id_sede = id_sede;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getNome_fantasia() {
