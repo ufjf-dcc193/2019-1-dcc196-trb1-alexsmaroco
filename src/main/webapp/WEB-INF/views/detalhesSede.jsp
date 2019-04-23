@@ -36,10 +36,11 @@
                 <td> <input type="number" id="telefone" name="telefone" value=${sede.telefone}> </td>
             </tr>
             <tr>
-                <td> <input type="submit" name="Editar"/> </td>
+                <td> <input type="submit" value="Editar"/></td>
             </tr>
         </table>
     </form>
+
     <a href="sedes.html">Voltar</a>
 </body>
 </html>
