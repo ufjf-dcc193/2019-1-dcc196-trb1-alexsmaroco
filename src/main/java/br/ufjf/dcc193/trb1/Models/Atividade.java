@@ -7,22 +7,22 @@ import java.util.Date;
  */
 public class Atividade {
 
-    private Number id_atividade;
+    private Integer id_atividade;
     private String titulo;
     private String descricao;
     private Date data_inicio;
     private Date data_fim;
-    private Number horas_assistencial;
-    private Number horas_juridica;
-    private Number horas_financeira;
-    private Number horas_executiva;
+    private Integer horas_assistencial;
+    private Integer horas_juridica;
+    private Integer horas_financeira;
+    private Integer horas_executiva;
 
     public Atividade() {
 
         
     }
 
-    public Number getId_atividade() {
+    public Integer getId_atividade() {
         return id_atividade;
     }
 
@@ -45,35 +45,35 @@ public class Atividade {
     }
 
 
-    public Number getHoras_assistencial() {
+    public Integer getHoras_assistencial() {
         return this.horas_assistencial;
     }
 
-    public void setHoras_assistencial(Number horas_assistencial) {
+    public void setHoras_assistencial(Integer horas_assistencial) {
         this.horas_assistencial = horas_assistencial;
     }
 
-    public Number getHoras_juridica() {
+    public Integer getHoras_juridica() {
         return this.horas_juridica;
     }
 
-    public void setHoras_juridica(Number horas_juridica) {
+    public void setHoras_juridica(Integer horas_juridica) {
         this.horas_juridica = horas_juridica;
     }
 
-    public Number getHoras_financeira() {
+    public Integer getHoras_financeira() {
         return this.horas_financeira;
     }
 
-    public void setHoras_financeira(Number horas_financeira) {
+    public void setHoras_financeira(Integer horas_financeira) {
         this.horas_financeira = horas_financeira;
     }
 
-    public Number getHoras_executiva() {
+    public Integer getHoras_executiva() {
         return this.horas_executiva;
     }
 
-    public void setHoras_executiva(Number horas_executiva) {
+    public void setHoras_executiva(Integer horas_executiva) {
         this.horas_executiva = horas_executiva;
     }
 
@@ -90,7 +90,7 @@ public class Atividade {
         this.descricao = descricao;
     }
 
-    public void setId_atividade(Number id_atividade) {
+    public void setId_atividade(Integer id_atividade) {
         this.id_atividade = id_atividade;
     }
 

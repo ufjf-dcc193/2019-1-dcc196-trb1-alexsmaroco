@@ -5,12 +5,12 @@ package br.ufjf.dcc193.trb1.Models;
  */
 public class Sede {
 
-    private Number id_sede;
+    private Integer id_sede;
     private String nome_fantasia;
     private String estado;
     private String cidade;
     private String bairro;
-    private Number telefone;
+    private Integer telefone;
     private String website;
 
 
@@ -19,11 +19,11 @@ public class Sede {
     }
 
 
-    public Number getId_sede() {
+    public Integer getId_sede() {
         return this.id_sede;
     }
 
-    public void setId_sede(Number id_sede) {
+    public void setId_sede(Integer id_sede) {
         this.id_sede = id_sede;
     }
 
@@ -59,11 +59,11 @@ public class Sede {
         this.bairro = bairro;
     }
 
-    public Number getTelefone() {
+    public Integer getTelefone() {
         return this.telefone;
     }
 
-    public void setTelefone(Number telefone) {
+    public void setTelefone(Integer telefone) {
         this.telefone = telefone;
     }
 

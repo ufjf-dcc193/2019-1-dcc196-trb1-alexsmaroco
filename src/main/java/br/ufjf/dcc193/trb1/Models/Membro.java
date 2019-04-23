@@ -7,7 +7,7 @@ import java.util.Date;
  */
 public class Membro {
 
-    private Number id_membro;
+    private Integer id_membro;
     private String nome_completo;
     private String funcao;
     private String email;
@@ -19,11 +19,11 @@ public class Membro {
     }
 
 
-    public Number getId_membro() {
+    public Integer getId_membro() {
         return this.id_membro;
     }
 
-    public void setId_membro(Number id_membro) {
+    public void setId_membro(Integer id_membro) {
         this.id_membro = id_membro;
     }
 
