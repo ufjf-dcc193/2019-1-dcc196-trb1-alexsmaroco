@@ -1,4 +1,5 @@
 <%@page pageEncoding="utf-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +8,6 @@
 </head>
 <body>
     <h1>TRB1: Home </h1>
-    <p>  </p>
+    <a href="sedes.html"> <p> Ver sedes </p> </a>
 </body>
 </html>
