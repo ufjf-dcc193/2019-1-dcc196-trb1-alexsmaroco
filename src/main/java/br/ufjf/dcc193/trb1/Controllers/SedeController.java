@@ -13,7 +13,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
 
+import br.ufjf.dcc193.trb1.Models.Membro;
 import br.ufjf.dcc193.trb1.Models.Sede;
+import br.ufjf.dcc193.trb1.Repositories.MembroRepository;
 import br.ufjf.dcc193.trb1.Repositories.SedeRepository;
 
 @Controller
@@ -22,8 +24,11 @@ public class SedeController {
     @Autowired
     SedeRepository sedeRepo;
 
+    @Autowired
+    MembroRepository membroRepo;
+
     @RequestMapping(method = RequestMethod.GET, path = "sedes.html")
-    ModelAndView listaSedes(){
+    ModelAndView listaSedes() {
         ModelAndView mv = new ModelAndView();
         mv.setViewName("sedes");
         List<Sede> repoRes = sedeRepo.findAll();
@@ -33,7 +38,11 @@ public class SedeController {
 
     @RequestMapping(method = RequestMethod.POST, path = "sedes.html")
     @Transactional
-    RedirectView deletaSede(@RequestParam Integer id){
+    RedirectView deletaSede(@RequestParam Integer id) {
+        List<Membro> membros = membroRepo.findByFkIdSede(id);
+        for(Membro m: membros) {
+            membroRepo.deleteById(m.getId());
+        }
         sedeRepo.deleteById(id);
         return new RedirectView("sedes.html");
     }
@@ -61,7 +70,6 @@ public class SedeController {
 
     @RequestMapping(method=RequestMethod.POST, path="detalhesSede.html")
     RedirectView updateSede(@RequestParam Integer id, Sede sede) {
-        System.out.println(id);
         Sede s = sedeRepo.getOne(id);
         BeanUtils.copyProperties(sede, s, "id");
         sedeRepo.save(s);
