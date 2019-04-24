@@ -7,7 +7,8 @@
     <title>Home</title>
 </head>
 <body>
-    <h1>TRB1: Home </h1>
-    <a href="sedes.html"> <p> Ver sedes </p> </a>
+    <h1>DCC193 TRB1: Home </h1>
+    <h4>Autor: Alex da Silva Maroco</h4>
+    <p> <a href="sedes.html"> Ir para listagem de sedes </a> </p>
 </body>
 </html>
