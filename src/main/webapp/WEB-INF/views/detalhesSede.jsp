@@ -12,6 +12,10 @@
     <form action="detalhesSede.html?id=${sede.id}" method="POST">
         <table>
             <tr>
+                    <td> <label for="id">Id da sede: </label> </td>
+                    <td> <input disabled type="text" id="id" name="id" value=${sede.id}> </td>
+                </tr>
+            <tr>
                 <td> <label for="nome_fantasia">Nome: </label> </td>
                 <td> <input type="text" id="nome_fantasia" name="nome_fantasia" value=${sede.nome_fantasia}> </td>
             </tr>
@@ -40,6 +44,8 @@
             </tr>
         </table>
     </form>
+
+    <a href="membros.html?id_sede=${sede.id}">Membros</a>
 
     <a href="sedes.html">Voltar</a>
 </body>

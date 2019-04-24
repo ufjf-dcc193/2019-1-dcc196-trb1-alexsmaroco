@@ -25,7 +25,7 @@
                     ${sede.nome_fantasia}
                 </td>
                 <td> 
-                    <a href="detalhesSede.html?id=${sede.id}"> <button>Editar</button> </a> 
+                    <a href="detalhesSede.html?id=${sede.id}"> <button> Detalhes </button> </a> 
                 </td>
                 <td> 
                     <form action="sedes.html?id=${sede.id}" method="POST">
