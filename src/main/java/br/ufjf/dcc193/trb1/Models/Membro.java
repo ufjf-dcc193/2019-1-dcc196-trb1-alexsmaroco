@@ -1,13 +1,11 @@
 package br.ufjf.dcc193.trb1.Models;
 
-import java.util.Date;
+import java.sql.Date;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 
 
 
@@ -18,8 +16,7 @@ public class Membro {
     @GeneratedValue(strategy = GenerationType.TABLE)
     private Integer id;
 
-    @ManyToOne(optional = false, cascade = CascadeType.ALL)
-    private Sede fk_sede;
+    private Integer fkIdSede;
 
     private String nome_completo;
     private String funcao;
@@ -79,5 +76,13 @@ public class Membro {
     public void setData_fim(Date data_fim) {
         this.data_fim = data_fim;
     }
-    
+
+
+    public Integer getFkIdSede() {
+        return fkIdSede;
+    }
+
+    public void setFkIdSede(Integer fkIdSede) {
+        this.fkIdSede = fkIdSede;
+    }
 }
