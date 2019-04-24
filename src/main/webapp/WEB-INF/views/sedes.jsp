@@ -36,6 +36,7 @@
         </c:forEach>
 
     </table>
+    <p> <a href="relatorio.html"> Ver relátorio de horas por sede</a></p>
 
 </body>
 </html>
