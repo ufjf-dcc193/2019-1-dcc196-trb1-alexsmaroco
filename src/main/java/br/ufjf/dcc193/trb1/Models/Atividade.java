@@ -1,14 +1,14 @@
 package br.ufjf.dcc193.trb1.Models;
 
-import java.util.Date;
 
-import javax.persistence.CascadeType;
+import java.sql.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.validation.constraints.NotNull;
+
 
 
 
@@ -19,17 +19,20 @@ public class Atividade {
     @GeneratedValue(strategy = GenerationType.TABLE)
     private Integer id;
 
-    @ManyToOne(optional = false, cascade = CascadeType.ALL)
-    @JoinColumn(name = "fk_sede_id", nullable = false)
-    private Sede fk_sede;
+    private Integer fkIdSede;
 
     private String titulo;
     private String descricao;
     private Date data_inicio;
     private Date data_fim;
+
+    @NotNull
     private Integer horas_assistencial;
+    @NotNull
     private Integer horas_juridica;
+    @NotNull
     private Integer horas_financeira;
+    @NotNull
     private Integer horas_executiva;
 
     public Atividade() {
@@ -110,5 +113,12 @@ public class Atividade {
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
-    
+
+    public Integer getFkIdSede() {
+        return fkIdSede;
+    }
+
+    public void setFkIdSede(Integer fkIdSede) {
+        this.fkIdSede = fkIdSede;
+    }
 }
