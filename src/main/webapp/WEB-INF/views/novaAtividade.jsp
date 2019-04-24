@@ -7,7 +7,7 @@
     <title>Criação de atividades</title>
 </head>
 <body>
-    <h1>TRB1: Nova atividade </h1>
+    <h1> Nova atividade </h1>
 
     <form action="novaAtividade.html?id_sede=${id_sede}" method="POST">
         <table>
@@ -48,6 +48,6 @@
             </tr>
         </table>
     </form>
-    <a href="atividades.html?id_sede=${id_sede}">Voltar</a>
+    <p><a href="atividades.html?id_sede=${id_sede}"><button>Voltar</button></a></p>
 </body>
 </html>

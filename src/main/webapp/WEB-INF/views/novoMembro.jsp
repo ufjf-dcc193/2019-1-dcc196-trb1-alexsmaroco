@@ -7,7 +7,7 @@
     <title>Criação de membros</title>
 </head>
 <body>
-    <h1>TRB1: Novo membro </h1>
+    <h1> Novo membro </h1>
 
     <form action="novoMembro.html?id_sede=${id_sede}" method="POST">
         <table>
@@ -36,6 +36,6 @@
             </tr>
         </table>
     </form>
-    <a href="membros.html?id_sede=${id_sede}">Voltar</a>
+    <p><a href="membros.html?id_sede=${id_sede}"><button>Voltar</button></a></p>
 </body>
 </html>

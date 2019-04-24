@@ -4,11 +4,11 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Membros</title>
+    <title>Atividades</title>
 </head>
 <body>
     <h1> Atividades da sede </h1>
-    <a href="novaAtividade.html?id_sede=${id_sede}">Registrar nova atividade</a>
+    <a href="novaAtividade.html?id_sede=${id_sede}"><button>Registrar nova atividade</button></a>
 
     <h4>Lista de atividades</h4>
     
@@ -34,6 +34,6 @@
         </c:forEach>
 
     </table>
-    <a href="detalhesSede.html?id=${id_sede}">Voltar</a>
+    <p><a href="detalhesSede.html?id=${id_sede}"><button>Voltar</button></a></p>
 </body>
 </html>

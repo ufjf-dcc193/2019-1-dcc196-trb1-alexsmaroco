@@ -4,10 +4,11 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Detalhes da sede</title>
+    <title>Detalhes do membro</title>
 </head>
 <body>
-    <h1>TRB1: Detalhes sede </h1>
+    <h1> Detalhes do membro </h1>
+    <h5>Edite as informações abaixo e clique em 'editar' para salvá-las</h5>
 
     <form action="detalhesMembro.html?id=${membro.id}" method="POST">
             <table>
@@ -45,7 +46,7 @@
             </table>
         </form>
 
-    <a href="membros.html?id_sede=${membro.fkIdSede}">Voltar</a>
+    <p><a href="membros.html?id_sede=${membro.fkIdSede}"><button>Voltar</button></a></p>
 
 </body>
 </html>

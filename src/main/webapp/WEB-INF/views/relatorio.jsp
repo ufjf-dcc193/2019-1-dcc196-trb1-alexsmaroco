@@ -7,11 +7,11 @@
     <title>Relatório</title>
 </head>
 <body>
-    <h1>TRB1: Relatório </h1>
+    <h1> Total de horas por sede </h1>
    
     <table border="1">
         <tr> 
-            <th>Nome</th>
+            <th>Sede</th>
             <th>Horas assistenciais</th>
             <th>Horas jurídicas</th>
             <th>Horas financeiras</th>
@@ -38,7 +38,7 @@
         </c:forEach>
 
     </table>
-    <p> <a href="sedes.html"> Voltar </a></p>
+    <p> <a href="sedes.html"> <button>Voltar</button> </a></p>
 
 </body>
 </html>

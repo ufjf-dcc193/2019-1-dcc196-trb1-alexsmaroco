@@ -7,8 +7,8 @@
     <title>Sedes</title>
 </head>
 <body>
-    <h1>TRB1: Sedes </h1>
-    <a href="novaSede.html">Registrar nova sede</a>
+    <h1> Sedes </h1>
+    <a href="novaSede.html"><button>Registrar nova sede</button></a>
 
     <h4>Lista de sedes</h4>
     
@@ -36,7 +36,7 @@
         </c:forEach>
 
     </table>
-    <p> <a href="relatorio.html"> Ver relátorio de horas por sede</a></p>
+    <p> <a href="relatorio.html"> <button>Ver relátorio de horas por sede</button></a></p>
 
 </body>
 </html>

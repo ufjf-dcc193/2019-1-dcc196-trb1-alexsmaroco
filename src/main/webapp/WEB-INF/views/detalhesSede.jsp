@@ -7,7 +7,8 @@
     <title>Detalhes da sede</title>
 </head>
 <body>
-    <h1>TRB1: Detalhes sede </h1>
+    <h1> Detalhes da sede </h1>
+    <h5>Edite as informações abaixo e clique em 'editar' para salvá-las</h5>
 
     <form action="detalhesSede.html?id=${sede.id}" method="POST">
         <table>
@@ -45,8 +46,8 @@
         </table>
     </form>
 
-    <p><a href="membros.html?id_sede=${sede.id}">Membros</a></p>
-    <p><a href="atividades.html?id_sede=${sede.id}">Atividades</a></p>
-    <p><a href="sedes.html">Voltar</a></p>
+    <p><a href="membros.html?id_sede=${sede.id}"><button>Membros</button></a></p>
+    <p><a href="atividades.html?id_sede=${sede.id}"><button>Atividades</button></a></p>
+    <p><a href="sedes.html"><button>Voltar</button></a></p>
 </body>
 </html>

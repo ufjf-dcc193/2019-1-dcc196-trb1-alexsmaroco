@@ -7,7 +7,7 @@
     <title>Criação de sedes</title>
 </head>
 <body>
-    <h1>TRB1: Nova sede </h1>
+    <h1> Nova sede </h1>
 
     <form action="novaSede.html" method="POST">
         <table>
@@ -40,6 +40,6 @@
             </tr>
         </table>
     </form>
-    <a href="sedes.html">Voltar</a>
+    <p><a href="sedes.html"><button>Voltar</button></a></p>
 </body>
 </html>

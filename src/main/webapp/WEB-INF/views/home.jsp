@@ -9,6 +9,6 @@
 <body>
     <h1>DCC193 TRB1: Home </h1>
     <h4>Autor: Alex da Silva Maroco</h4>
-    <p> <a href="sedes.html"> Ir para listagem de sedes </a> </p>
+    <p> <a href="sedes.html"> <button>Ir para listagem de sedes</button> </a> </p>
 </body>
 </html>

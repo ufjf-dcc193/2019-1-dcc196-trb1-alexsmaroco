@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1> Membros da sede </h1>
-    <a href="novoMembro.html?id_sede=${id_sede}">Registrar novo membro</a>
+    <a href="novoMembro.html?id_sede=${id_sede}"><button>Registrar novo membro</button></a>
 
     <h4>Lista de membros</h4>
     
@@ -34,6 +34,6 @@
         </c:forEach>
 
     </table>
-    <a href="detalhesSede.html?id=${id_sede}">Voltar</a>
+    <p><a href="detalhesSede.html?id=${id_sede}"><button>Voltar</button></a></p>
 </body>
 </html>
